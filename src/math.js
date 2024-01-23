@@ -26,4 +26,8 @@ function divs(n1,n2){
     return n1/n2;
 }
 
-export  {addition,subs,multi,divs};
+function mod(n1,n2){
+    return n1%n2;
+}
+
+export  {addition,subs,multi,divs,mod};

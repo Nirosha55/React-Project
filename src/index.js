@@ -34,6 +34,7 @@ ReactDOM.render(
 <li>{math.subs(6,3)}</li>
 <li>{math.multi(9,8)}</li>
 <li>{math.divs(9,3)}</li>
+<li>{math.mod(9,2)}</li>
   </ul>
 </div>,document.getElementById('root')
 );
