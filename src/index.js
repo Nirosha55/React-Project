@@ -1,17 +1,41 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// // import PI,{ doublePi,triplePi } from './math';
+// import * as pi from './math.js';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+
+
+// ReactDOM.render(
+// <div>
+//   <ul>
+//   {/* <li>{PI}</li>
+//     <li>{doublePi()}</li>
+//     <li>{triplePi()}</li> */}
+//     <li>{pi.default}</li>
+//     <li>{pi.doublePi()}</li>
+//     <li>{pi.triplePi()}</li>
+//   </ul>
+// </div>,document.getElementById('root')
+// );
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+// import  {addition,subs,multi,divs} from './math'
+import * as math from './math';
+ReactDOM.render(
+<div>
+  <ul>
+{/* <li>{addition(2,3)}</li>
+<li>{subs(6,3)}</li>
+<li>{multi(9,8)}</li>
+<li>{divs(9,3)}</li> */}
+<li>{math.addition(2,3)}</li>
+<li>{math.subs(6,3)}</li>
+<li>{math.multi(9,8)}</li>
+<li>{math.divs(9,3)}</li>
+  </ul>
+</div>,document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
